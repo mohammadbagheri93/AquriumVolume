@@ -8,7 +8,7 @@ except :
     print("somthing went wrong!\nplease enter a number")    
 
 else :
-    print("thise aquariume volume is %d litres" %(volume))
+    print("thise aquariume volume is %d litres." %(volume))
 
 
 
