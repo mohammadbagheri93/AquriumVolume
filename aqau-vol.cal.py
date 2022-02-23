@@ -1,15 +1,15 @@
 
 try :
-    LENGHT = int(input("enter lenght aquarium"))
-    HEIGHT = int(input("enter height aquarium"))
-    WIDTH = int(input("enter depth aquarium"))
+    LENGHT = int(input("enter lenght aquarium by cm: "))
+    HEIGHT = int(input("enter height aquarium by cm: "))
+    WIDTH = int(input("enter depth aquarium by cm: "))
     volume = (LENGHT * HEIGHT * WIDTH) / 1000
-    volume_square = (((HEIGHT * LENGHT / 100) * 2) + ((HEIGHT * WIDTH / 100) * 2) + (WIDTH * LENGHT / 100))
+    volume_square = (((HEIGHT * LENGHT / 10000) * 2) + ((HEIGHT * WIDTH / 10000) * 2) + (WIDTH * LENGHT / 10000))
 except :
     print("somthing went wrong!\nplease enter a number")    
 
 else :
-    print("""thise aquariume volume is %d litres.
+    print(f"""thise aquariume volume is %d litres.
     Size of sides glasses is :
     {HEIGHT} * {LENGHT}
     {HEIGHT} * {LENGHT} 
@@ -17,7 +17,7 @@ else :
     {HEIGHT} * {WIDTH}
     {WIDTH} * {LENGHT} 
     Total square meter is :
-    {volume_square}
+    {volume_square} m2
     """ %(volume))
 
 
